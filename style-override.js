@@ -118,7 +118,7 @@ const generateOverride = (params = {}) => {
         }
         
         .post-content h2 {
-          display: inline-block;
+          display: block;
           color: ${colors["content-color-first"][params.skin]}!important;
           position: relative!important;
           background: linear-gradient(180deg, transparent 75%, ${colors["accent-color-first"][params.skin].colorRgba(0.4)} 0)!important;
@@ -157,9 +157,21 @@ const generateOverride = (params = {}) => {
       ${params.customCss}
     `
     }
+
+     // 是否显示文章目录
+  if (typeof params.openPostToc !== 'undefined' && !params.openPostToc) {
+    result += `
+      .toc-container {
+        display: none;
+      }
+    `
+  }
+
     console.log(result)
     return result
 }
+
+
 
 /**
  * 十六进制颜色转 RGBA 颜色

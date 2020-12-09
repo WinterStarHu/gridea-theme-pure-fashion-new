@@ -1,0 +1,71 @@
+<script>
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+  
+  if (mainNavLinks == null || mainNavLinks.length == 0) {
+    let tocContainer = document.querySelector(".toc-container");
+    tocContainer.classList.remove("toc-container")
+    tocContainer.parentElement.firstElementChild.style.width = "100%"
+    console.log("隐藏大纲")
+  } else {
+
+    // This should probably be throttled.
+    // Especially because it triggers during smooth scrolling.
+    // https://lodash.com/docs/4.17.10#throttle
+    // You could do like...
+    // window.addEventListener("scroll", () => {
+    //    _.throttle(doThatStuff, 100);
+    // });
+    // Only not doing it here to keep this Pen dependency-free.
+
+
+    window.addEventListener("scroll", event => {
+      let fromTop = window.scrollY;
+
+      mainNavLinks.forEach((link, index) => {
+        let section = document.getElementById(decodeURI(link.hash).substring(1));
+        let nextSection = null
+        if (mainNavLinks[index + 1]) {
+          nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+        }
+        if (section.offsetTop <= fromTop) {
+          if (nextSection) {
+            if (nextSection.offsetTop > fromTop) {
+              link.classList.add("current");
+            } else {
+              link.classList.remove("current");
+            }
+          } else {
+            link.classList.add("current");
+          }
+        } else {
+          link.classList.remove("current");
+        }
+      });
+    });
+  }
+
+
+
+</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script>
+  let images = document.querySelectorAll("figure > img");
+  //   debugger
+  //   console.log("dddd: "+ images);
+  images.forEach(image => {
+    var parent = image.parentElement;
+    parent.removeChild(image);
+    var aelem = document.createElement('a');
+    aelem.href = image.src;
+    aelem.dataset['fancybox'] = 'gallery';
+    aelem.classList.add('fancybox');
+    aelem.appendChild(image);
+    parent.appendChild(aelem);
+  })
+
+//   <a data-fancybox="gallery" href="big_1.jpg"><img src="small_1.jpg"></a>
+// <a data-fancybox="gallery" href="big_2.jpg"><img src="small_2.jpg"></a>
+</script>
