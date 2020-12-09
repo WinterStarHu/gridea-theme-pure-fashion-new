@@ -1,27 +1,19 @@
 ## 介绍
 
-一款专为 Gridea 设计的主题，默认内置 "简约白"、"暗夜黑"、"银光灰"、"墨草绿" 4 种配色方案。另外还：
+一款专为 Gridea 设计的主题
 
-- 支持自定义配色。
-- 移动端页面适配。
-- 支持社交信息设置。
-- 支持谷歌统计。
-- 支持友链功能。（感谢 [@renbaoshuo](https://github.com/renbaoshuo)）
-- 支持在根目录下增加关于页面。（感谢 [@renbaoshuo](https://github.com/renbaoshuo)） **格式 `https://example.com/about/`*
-- 自定义 CSS 样式。
-- 文章搜索功能。（感谢 [@uiYzzi](https://github.com/uiYzzi)）
+该主题由[gridea-theme-pure](https://github.com/imhanjie/gridea-theme-pure)改动而来，由于改动太大了，所以没有**pull request**, 就单独fork了一下。
 
-## 预览
+在原有主题[gridea-theme-pure](https://github.com/imhanjie/gridea-theme-pure/README.md)的支持下，修改如下：
 
-示例站点：<https://imhanjie.com/>
-
-![](https://tva1.sinaimg.cn/large/006tNbRwly1gaqcu0b03bj31vh0u0avx.jpg)
-
-![](https://tva1.sinaimg.cn/large/006tNbRwly1gaqcutvj86j32vl0u04e4.jpg)
-
-![](https://tva1.sinaimg.cn/large/006tNbRwly1gaqcvc3pjkj32vl0u0aq5.jpg)
-
-![](https://tva1.sinaimg.cn/large/006tNbRwly1gaqcvhp5mdj32vl0u04cw.jpg)
+1. 页面布局容器大小调整；
+2. 页面导航栏Logo添加点击事件；
+3. 页面导航栏布局摆放调整；
+4. 文章添加大纲导航；
+5. 图片添加图片预览功能；
+6. 替换社交图标；
+7. 手机UI适配优化；
+8. 删除一些残余的js、css文件。
 
 
 ## 安装
