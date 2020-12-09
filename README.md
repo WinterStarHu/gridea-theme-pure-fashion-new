@@ -50,3 +50,4 @@
 
 - [Gridea - 一个静态博客写作客户端](https://gridea.dev/)
 - [gridea-theme-starter](https://github.com/getgridea/gridea-theme-starter)
+- [gridea-theme-pure](https://github.com/imhanjie/gridea-theme-pure)
