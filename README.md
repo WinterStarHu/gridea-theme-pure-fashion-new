@@ -20,7 +20,7 @@
 
 ## 安装
 
-使用 `git clone` 本项目到 Gridea 站点源文件路径的 `themes` 目录内，或者前往 [release](https://github.com/jxiaow/gridea-theme-pure_fashion/releases) 页面下载最新的 release 解压到 Gridea 站点源文件路径的 `themes` 目录内，然后**重启  Gridea** 即可。
+使用 `git clone` 本项目到 Gridea 站点源文件路径的 `themes` 目录内，或者前往 [release](https://github.com/jxiaow/gridea-theme-pure-fashion/releases) 页面下载最新的 release 解压到 Gridea 站点源文件路径的 `themes` 目录内，然后**重启  Gridea** 即可。
 
 >  Gridea 站点源文件路径：可在 Gridea 客户端设置页面查看。
 
