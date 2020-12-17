@@ -106,9 +106,9 @@ const generateOverride = (params = {}) => {
           color: ${colors["content-color-first"][params.skin]}!important;
         }
         
-        a {
-          color: ${colors["accent-color-first"][params.skin]}!important;
-        }
+        // a {
+        //   color: ${colors["accent-color-first"][params.skin]}!important;
+        // }
         
         .post-content h1 {
           display: inline-block;
@@ -130,9 +130,9 @@ const generateOverride = (params = {}) => {
           background: linear-gradient(180deg, transparent 75%, ${colors["accent-color-first"][params.skin].colorRgba(0.4)} 0)!important;
         }
         
-        .gt-post-content a {
-          color: ${colors["accent-color-first"][params.skin]}!important;
-        }
+        // .gt-post-content a {
+        //   color: ${colors["accent-color-first"][params.skin]}!important;
+        // }
         
         .gt-post-content blockquote {
           background: ${colors["accent-color-second"][params.skin]}!important;
