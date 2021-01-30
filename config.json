@@ -1,8 +1,8 @@
 {
-  "name": "Pure-Fashion",
-  "version": "2.0.0",
-  "author": "jxiaow",
-  "repository": "https://github.com/jxiaow/gridea-theme-pure-fashion",
+  "name": "Pure-Fashion-New",
+  "version": "1.0.0",
+  "author": "winterstarhu",
+  "repository": "https://github.com/WinterStarHu/gridea-theme-pure-fashion-new",
   "customConfig": [
     {
       "name": "skin",
