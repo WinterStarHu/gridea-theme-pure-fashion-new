@@ -2,22 +2,12 @@
 
 一款专为 Gridea 设计的主题。
 
-**该主题由[gridea-theme-pure](https://github.com/imhanjie/gridea-theme-pure)改动而来，由于改动太大了，所以没有pull request, 就单独fork了一下。**
+**该主题由[gridea-theme-pure-fasion](https://github.com/jxiaow/gridea-theme-pure-fashion)改动而来**
 
-**关于这款的介绍，请看[gridea-theme-pure](https://github.com/imhanjie/gridea-theme-pure/blob/master/README.md)**
 
 修改如下：
 
-1. 页面布局容器大小调整；
-2. 页面导航栏Logo添加点击事件；
-3. 页面导航栏布局摆放调整；
-4. 文章添加大纲导航；
-5. 图片添加图片预览功能；
-6. 替换社交图标；
-7. 手机UI适配优化；
-8. 删除一些残余的js、css文件;
-9. 添加markdown流程图渲染。
-
+1. 在博客开头添加了内容分级目录
 
 ## 安装
 
